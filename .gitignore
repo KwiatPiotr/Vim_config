@@ -1,0 +1,10 @@
+autoload/
+
+bundle/
+
+undodir/
+
+.netrwhist
+
+
+

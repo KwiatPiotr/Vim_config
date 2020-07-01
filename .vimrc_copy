@@ -1,0 +1,46 @@
+set nocompatible
+
+syntax on
+
+set encoding=utf-8
+
+set number
+
+set ttyfast
+
+set whichwrap+=<,>,h,l,[,]
+
+set autoindent
+
+set tabstop=4 softtabstop=4
+
+set shiftwidth=4
+
+set smartindent
+
+set noswapfile
+set nobackup
+set undodir=~/.vim/undodir
+set undofile
+set incsearch
+
+set colorcolumn=120
+highlight ColorColumn ctermbg=0 guibg=lightgrey
+
+call plug#begin('~/.vim/plugged')
+
+Plug 'lyutils/vim-rtags'
+Plug 'morhetz/gruvbox'
+Plug 'ycm-core/YouCompleteMe'
+
+call plug#end()
+
+colorscheme gruvbox
+set background=dark
+
+" Disable ycm openning preview tab
+set completeopt-=preview
+
+"set foldmethod=indent
+"set foldlevel=1
+"set foldclose=all 
